@@ -14,9 +14,9 @@ Run the scripts and it will output a trump.txt, a trump folding containing corup
 
 Note, this may take a long time if you are on free account
 
-After that, you want to change the variable "filename"'s value to "trump_twitter_np_ada.npy". It should show results on different runs with their corresponding TC and TD.
+After that, you want to change the variable "filename"'s value to "trump_twitter_np_ada.npy" in the main.py. It should show results on different runs with their corresponding TC and TD.
 
-This script will output all the results in json format under "result" subdirectory
+This script will also save all the results in json format under "result" subdirectory
 
 To calculate the average performance of runs, use sum_field.py
 
