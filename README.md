@@ -1,12 +1,9 @@
 # CS_274_Topic_Modeling
  Topic modeling for social media
 
-Running the code:
-Download the repo from https://github.com/MaartenGr/BERTopic_evaluation
+This project requires openai==0.27.3, octis==1.10.2 and bertopic==0.14.1
 
-pip install the destination folder
-
-##If you hit dependence conflicts regarding ocis and other packages, instsall ocis with -e flag to workaround
+##If you hit dependence conflicts regarding ocis and other packages, instsall the latest ocis with -e flag to workaround the issue
 
 Replace variable "openai.api_key"'s value with your openai api key in create_embedding.py
 
