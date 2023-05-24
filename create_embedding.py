@@ -14,13 +14,12 @@ def process_apply(x):
 def main():
     data_loader = DataLoader(dataset="trump").prepare_docs(save="trump.txt").preprocess_octis(output_folder="trump")
     dataset, custom = "trump", True
-    #data_loader = DataLoader(dataset)
+    data_loader = DataLoader(dataset)
     _, timestamps = data_loader.load_docs()
     data = data_loader.load_octis(custom)
     data = [" ".join(words) for words in data.get_corpus()]
     df = pd.DataFrame (data, columns = ['tweets'])
     df = df.dropna()
-    df.head(2)
 
     embedding_model = "text-embedding-ada-002"
     embedding_encoding = "cl100k_base"  # this is the encoding for text-embedding-ada-002
