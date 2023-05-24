@@ -6,7 +6,7 @@ Download the repo from https://github.com/MaartenGr/BERTopic_evaluation
 
 pip install the destination folder
 
-##If you hit dependence conflicts regarding ocis, instsall ocis while with -e flag to workaround
+##If you hit dependence conflicts regarding ocis and other packages, instsall ocis with -e flag to workaround
 
 Replace variable "openai.api_key"'s value with your openai api key in create_embedding.py
 
