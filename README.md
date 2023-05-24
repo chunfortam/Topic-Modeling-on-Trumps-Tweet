@@ -10,14 +10,14 @@ pip install the destination folder
 
 Replace variable "openai.api_key"'s value with your openai api key in create_embedding.py
 
-Run the scripts and it will output a trump.txt, a trump folding containing corups.tsv, and trump_twitter_np_ada.npy
+Running create_embedding.py will output a trump.txt, a trump folding containing corups.tsv, and trump_twitter_np_ada.npy
 
 Note, this may take a long time if you are on free account
 
-After that, you want to change the variable "filename"'s value to "trump_twitter_np_ada.npy" in the main.py. It should show results on different runs with their corresponding TC and TD.
+After that, you want to change the variable "filename"'s value to "trump_twitter_np_ada.npy" in the main.py. After executing it, it will show results on different runs with their corresponding TC and TD.
 
 This script will also save all the results in json format under "result" subdirectory
 
 To calculate the average performance of runs, use sum_field.py
 
-To visualize the vectors after UMAP and Clustering, use Visualization.ipynb under visual_notebook folder
+To visualize the vectors after UMAP and Clustering, use Visualization.ipynb under visual_notebook folder. It can be run on 
