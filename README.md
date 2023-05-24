@@ -3,6 +3,7 @@
 
 Running the code:
 Download the repo from https://github.com/MaartenGr/BERTopic_evaluation
+
 pip install the destination folder
 ##If you hit dependence conflicts regarding ocis, instsall ocis while with -e flag to workaround
 
