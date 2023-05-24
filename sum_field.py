@@ -6,7 +6,7 @@ import glob
 average_npmi = 0
 average_diversity = 0
 count = 0
-file_pattern = 'result/BERTopic_sentence-t5-large_trump_*.json'
+file_pattern = 'result/Ada02_*.json'
 file_list = glob.glob(file_pattern)
 
 for filename in file_list:

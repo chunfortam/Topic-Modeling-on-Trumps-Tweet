@@ -1,25 +1,20 @@
 from evaluation import DataLoader
 import pandas as pd
-import os
-import openai
-import pandas as pd
 import tiktoken
-import re
 import numpy as np
-from openai.embeddings_utils import get_embedding
 def process_apply(x):
     import openai
     from openai.embeddings_utils import get_embedding
     embedding_model = "text-embedding-ada-002"
     openai.organization = ""
-    openai.api_key = "<insert your key>"
+    openai.api_key = "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"
     openai.organization = ""
     return get_embedding(x, engine=embedding_model)
 
 def main():
-    dataloader = DataLoader(dataset="trump").prepare_docs(save="trump.txt").preprocess_octis(output_folder="trump_414")
-    dataset, custom = "trump_414", True
-    data_loader = DataLoader(dataset)
+    data_loader = DataLoader(dataset="trump").prepare_docs(save="trump.txt").preprocess_octis(output_folder="trump")
+    dataset, custom = "trump", True
+    #data_loader = DataLoader(dataset)
     _, timestamps = data_loader.load_docs()
     data = data_loader.load_octis(custom)
     data = [" ".join(words) for words in data.get_corpus()]
@@ -37,7 +32,6 @@ def main():
 
     import time
     split_dfs = np.array_split(df,47)
-    split_dfs[-1]
     for i in range(len(split_dfs)):
         sdf = split_dfs[i]
         start_time = time.time()
@@ -48,7 +42,7 @@ def main():
         sdf["embedding"].head(2)
     resultdf = pd.concat(split_dfs)
     resultdf.head(10)
-    resultdf.to_csv("trump_tweet_embedded_v2.csv")
+    resultdf.to_csv("trump_tweet_embedded.csv")
     import ast
     df = pd.read_csv("trump_tweet_embedded.csv")
     emb = np.array([ast.literal_eval(x) for x in df["embedding"]])
