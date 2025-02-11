@@ -1,6 +1,4 @@
-Topic Modeling on Trump's Tweets
-
- [Presentation Slides](https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit#slide=id.p17)
+Topic Modeling on Trump's Tweets   [Presentation Slides](https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit#slide=id.p17)
 
 
 
