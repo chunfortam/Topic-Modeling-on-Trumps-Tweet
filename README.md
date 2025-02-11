@@ -1,5 +1,5 @@
-# CS_274_Topic_Modeling
- Topic modeling for social media
+
+Topic Modeling on Trump’s Tweet
 
 This project requires openai==0.27.3, octis==1.10.2 and bertopic==0.14.1
 
