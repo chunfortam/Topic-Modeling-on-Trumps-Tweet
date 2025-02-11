@@ -5,10 +5,12 @@ Topic Modeling on Trump's Tweets
 The goal of this project is to apply topic modeling to Trump's tweets dataset, leveraging state-of-the-art embedding models to improve the quality and coherence of discovered topics. The project includes:
 
 Preprocessing: Cleaning and tokenizing tweets
-Embedding Generation: Comparing Ada-02 (OpenAI) vs. SBERT (Sentence-BERT)
-Dimensionality Reduction: Using UMAP for effective clustering
-Clustering: Leveraging HDBSCAN for discovering tweet groupings
-Topic Representation: Utilizing c-TF-IDF for coherent topic labeling
+- Embedding Generation: Comparing Ada-02 (OpenAI) vs. SBERT (Sentence-BERT)
+- Dimensionality Reduction: Using UMAP for effective clustering
+- Clustering: Leveraging HDBSCAN for discovering tweet groupings
+- Topic Representation: Utilizing c-TF-IDF for coherent topic labeling
+
+
 🔗 Dataset
 The dataset consists of 44,253 tweets from Donald Trump.
 It includes tweets from different periods, covering political and social events.
