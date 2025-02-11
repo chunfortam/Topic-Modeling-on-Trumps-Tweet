@@ -45,9 +45,9 @@ python src/create_embedding.py
 ```
 After execution, it will output:
 
-trump.txt: The cleaned text file.
-trump/ (folder): Contains corpus.tsv.
-trump_twitter_np_ada.npy: The generated embeddings.
+- trump.txt: The cleaned text file.
+- trump/ (folder): Contains corpus.tsv.
+- trump_twitter_np_ada.npy: The generated embeddings.
 ⚠ Note: If you're using a free OpenAI account, this step may take a long time due to rate limits.
 
 3. Updating File Paths in main.py
@@ -63,8 +63,10 @@ python src/main.py
 ```
 This script will:
 
-Display results for multiple runs with corresponding Topic Coherence (TC) and Topic Diversity (TD) scores.
-Save all results in JSON format under the results/ directory.
+- Display results for multiple runs with corresponding Topic Coherence (TC) and Topic Diversity (TD) scores.
+- Save all results in JSON format under the results/ directory.
+
+
 4. Calculating Average Performance
 To compute the average performance across multiple runs, use sum_field.py.
 Modify the file_pattern variable if necessary and run:
