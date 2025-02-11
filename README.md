@@ -1,7 +1,7 @@
 Topic Modeling on Trump's Tweets
-This repository explores topic modeling on Donald Trump’s tweets using transformer-based text embeddings and clustering techniques. The project compares different embedding methods, including Ada-02 and SBERT, within the BERTopic framework to improve topic coherence and representation.
 
 📌 Project Overview
+
 The goal of this project is to apply topic modeling to Trump's tweets dataset, leveraging state-of-the-art embedding models to improve the quality and coherence of discovered topics. The project includes:
 
 Preprocessing: Cleaning and tokenizing tweets
