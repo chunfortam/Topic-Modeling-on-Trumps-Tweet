@@ -1,6 +1,8 @@
 Topic Modeling on Trump's Tweets
 
-Presentation [link]([https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit?usp=sharing&ouid=108707614263026923326&rtpof=true&sd=true]).
+Presentation [GitHub Pages](https://pages.github.com/).
+
+
 
 
 📌 Project Overview
