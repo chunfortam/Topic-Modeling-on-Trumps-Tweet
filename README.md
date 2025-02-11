@@ -1,20 +1,98 @@
+Topic Modeling on Trump's Tweets
+This repository explores topic modeling on Donald Trump’s tweets using transformer-based text embeddings and clustering techniques. The project compares different embedding methods, including Ada-02 and SBERT, within the BERTopic framework to improve topic coherence and representation.
 
-Topic Modeling on Trump’s Tweet
+📌 Project Overview
+The goal of this project is to apply topic modeling to Trump's tweets dataset, leveraging state-of-the-art embedding models to improve the quality and coherence of discovered topics. The project includes:
 
-This project requires openai==0.27.3, octis==1.10.2 and bertopic==0.14.1
+Preprocessing: Cleaning and tokenizing tweets
+Embedding Generation: Comparing Ada-02 (OpenAI) vs. SBERT (Sentence-BERT)
+Dimensionality Reduction: Using UMAP for effective clustering
+Clustering: Leveraging HDBSCAN for discovering tweet groupings
+Topic Representation: Utilizing c-TF-IDF for coherent topic labeling
+🔗 Dataset
+The dataset consists of 44,253 tweets from Donald Trump.
+It includes tweets from different periods, covering political and social events.
 
-##If you hit dependence conflicts regarding ocis and other packages, instsall the latest ocis with -e flag to workaround the issue
+⚙️ Setup & Installation
+To run this project, ensure you have Python installed. Clone this repository and install dependencies:
 
-Replace variable "openai.api_key"'s value with your openai api key in create_embedding.py
+```
+git clone https://github.com/chunfortam/Topic-Modeling-on-Trumps-Tweet.git  
+cd Topic-Modeling-on-Trumps-Tweet  
+pip install -r requirements.txt
+```
 
-Running create_embedding.py will output a trump.txt, a trump folding containing corups.tsv, and trump_twitter_np_ada.npy
+🛠 Required Dependencies
+This project requires:
+```
+openai==0.27.3
+octis==1.10.2
+bertopic==0.14.1
+```
+⚠ If you encounter dependency conflicts with octis and other packages, install the latest version of octis using the -e flag to work around the issue:
+```
+pip install -e git+https://github.com/MIND-Lab/octis.git#egg=octis
+```
+🔍 Usage
+1. Setting Up OpenAI API Key
+Before running the script, replace the openai.api_key value in create_embedding.py with your OpenAI API key.
 
-Note, this may take a long time if you are on free account
+2. Running create_embedding.py
+This script processes the tweet dataset and generates embeddings.
 
-After that, you may want to change the variable "filename"'s value to "trump_twitter_np_ada.npy" in the main.py if you choose to save the embedding file to other path. After executing the script, it will show results on different runs with their corresponding TC and TD.
+```
+python src/create_embedding.py
+```
+After execution, it will output:
 
-This script will also save all the results in json format under "result" subdirectory
+trump.txt: The cleaned text file.
+trump/ (folder): Contains corpus.tsv.
+trump_twitter_np_ada.npy: The generated embeddings.
+⚠ Note: If you're using a free OpenAI account, this step may take a long time due to rate limits.
 
-To calculate the average performance of runs, use sum_field.py after changing the variable "file_pattern" if neccessary.
+3. Updating File Paths in main.py
+If you save the embedding file in a different location, update the variable filename in main.py to reflect the correct path:
 
-To visualize the vectors after UMAP and Clustering, use Visualization.ipynb under visual_notebook folder. It can be run on 
+```
+filename = "trump_twitter_np_ada.npy"
+```
+Then, execute main.py:
+
+```
+python src/main.py
+```
+This script will:
+
+Display results for multiple runs with corresponding Topic Coherence (TC) and Topic Diversity (TD) scores.
+Save all results in JSON format under the results/ directory.
+4. Calculating Average Performance
+To compute the average performance across multiple runs, use sum_field.py.
+Modify the file_pattern variable if necessary and run:
+
+```
+python src/sum_field.py
+```
+5. Visualizing Embeddings & Clusters
+To visualize vectors after UMAP and HDBSCAN clustering, open and run Visualization.ipynb inside the visual_notebook directory.
+
+📈 Methods
+1. Embedding Models
+SBERT (Sentence-BERT): A transformer-based embedding model optimized for sentence-level similarity.
+Ada-02 (OpenAI): A powerful embedding model used for text similarity and clustering.
+2. Dimensionality Reduction & Clustering
+UMAP: Reduces high-dimensional embeddings into a lower-dimensional space for better clustering.
+HDBSCAN: A density-based clustering algorithm that groups tweets into meaningful topics.
+3. Topic Representation
+c-TF-IDF: An improved term frequency-inverse document frequency method for extracting meaningful topic words.
+🛠️ Tools & Technologies
+Python
+BERTopic
+OpenAI’s Ada-02 Embeddings
+SBERT (Sentence-BERT)
+UMAP & HDBSCAN
+Scikit-learn, Pandas, NumPy
+Matplotlib, Seaborn
+
+📜 License
+This project is licensed under the MIT License.
+
