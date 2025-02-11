@@ -23,6 +23,7 @@ pip install -r requirements.txt
 ```
 
 🛠 Required Dependencies
+
 This project requires:
 ```
 openai==0.27.3
