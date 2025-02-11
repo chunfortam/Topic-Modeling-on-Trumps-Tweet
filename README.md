@@ -1,6 +1,6 @@
 Topic Modeling on Trump's Tweets
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+Presentation [link]([https://pages.github.com/](https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit?usp=sharing&ouid=108707614263026923326&rtpof=true&sd=true)).
 
 
 📌 Project Overview
