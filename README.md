@@ -1,5 +1,6 @@
 Topic Modeling on Trump's Tweets
-Presentation slides: https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit?usp=sharing&ouid=108707614263026923326&rtpof=true&sd=true
+[Presentation slides ]([url](https://docs.google.com/presentation/d/1WZBpx9AVgXbwttCZD434Ko0MffpT_9zf/edit?usp=sharing&ouid=108707614263026923326&rtpof=true&sd=true))
+
 📌 Project Overview
 
 The goal of this project is to apply topic modeling to Trump's tweets dataset, leveraging state-of-the-art embedding models to improve the quality and coherence of discovered topics. The project includes:
